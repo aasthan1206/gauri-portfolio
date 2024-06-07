@@ -8,7 +8,6 @@ import { FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { AnimatePresence } from "framer-motion";
 import cx from "classnames";
-import phone from "../assets/images/phone.png"
 import plane from "../assets/images/2.gif"
 
 const Home = () => {
@@ -41,7 +40,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* HERO SECTION */}
       <div className="bg-hero bg-cover h-[90vh] relative">
         <div
@@ -50,7 +49,7 @@ const Home = () => {
         >
           <div className="opacity-85">Gauri Gupta's</div>
           <div className="pl-8 opacity-85 pb-4"></div>
-          <div className="text-lg font-bold font-primary text-wrap opacity-90">
+          <div className="text-lg font-extrabold font-primary text-wrap opacity-90">
             Art Portfolio. Making an impact through art.
           </div>
         </div>
@@ -314,8 +313,7 @@ const Home = () => {
           <div className="text-xl font-bold opacity-70">Let's Chat</div>
           <div className="mt-4 font-primary italic lg:tracking-wider">For inquiries and collaborations, drop me a message.</div>
            <div className="font-primary italic lg:tracking-wider mt-2">Feel free to reach out and get in touch.</div>
-          {/* <img src={phone} alt="phone" className="w-[200px] h-[200px]" /> */}
-          <div className="hidden lg:block absolute -bottom-28"><img src={plane} alt="plane" /></div>
+          <div className="hidden lg:block absolute -bottom-28"><img src={plane} alt="plane" className="rotate-90"/></div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input
