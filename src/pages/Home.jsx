@@ -112,23 +112,23 @@ const Home = () => {
           <div className="flex flex-wrap justify-evenly p-8">
             {artData?.slice(0, 8)?.map((item) => (
               <div
-                key={item.id}
+                key={item?.id}
                 className="relative transition-all duration-500 ease-in-out transform hover:scale-110"
               >
-                <Link to={item.to} className="">
+                <Link to={item?.to} className="">
                   <img
-                    src={item.img}
+                    src={item?.img}
                     alt=""
                     data-aos="zoom-in"
-                    className="w-[300px] h-[300px] min-h-[300px] lg:w-[250px] lg:h-[250px] lg:min-h-[250px] mb-8"
-                    onMouseOver={() => setArtId(item.id)}
+                    className="w-[300px] h-[300px] min-h-[300px] lg:w-[250px] lg:h-[250px] lg:min-h-[250px] mb-8 lazyload"
+                    onMouseOver={() => setArtId(item?.id)}
                   />
                   {/* After Hover Part */}
                   <AnimatePresence initial={false}>
                     <div
                       className={cx(
                         "hidden absolute top-0 bg-brown-main bg-opacity-50 text-center w-[300px] h-[300px] min-h-[300px] lg:w-[250px] lg:h-[250px] lg:min-h-[250px]",
-                        { "!flex !justify-center": artId === item.id }
+                        { "!flex !justify-center": artId === item?.id }
                       )}
                     >
                       <div className="text-white-main border-2 border-white-main rounded-3xl px-3 py-1 self-center font-primary">
@@ -148,23 +148,23 @@ const Home = () => {
           <div>
             {artData?.slice(8, 9)?.map((item) => (
               <div
-                key={item.id}
+                key={item?.id}
                 className="relative transition-all duration-500 ease-in-out transform hover:scale-110 flex justify-center"
               >
-                <Link to={item.to} className="">
+                <Link to={item?.to} className="">
                   <img
-                    src={item.img}
+                    src={item?.img}
                     alt=""
                     data-aos="fade-up"
-                    className="w-[300px] h-[300px] lg:mb-8 lg:w-[500px] lg:h-[500px]"
-                    onMouseOver={() => setArtId(item.id)}
+                    className="w-[300px] h-[300px] lg:mb-8 lg:w-[500px] lg:h-[500px] lazyload"
+                    onMouseOver={() => setArtId(item?.id)}
                   />
                   {/* After Hover Part */}
                   <AnimatePresence initial={false}>
                     <div
                       className={cx(
                         "hidden absolute top-0 bg-brown-main bg-opacity-50 text-center w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]",
-                        { "!flex !justify-center": artId === item.id }
+                        { "!flex !justify-center": artId === item?.id }
                       )}
                     >
                       <div className="text-white-main border-2 border-white-main rounded-3xl px-3 py-1 self-center font-primary">
@@ -190,23 +190,23 @@ const Home = () => {
           <div className="flex flex-wrap justify-evenly px-8 pt-8">
             {artData?.slice(9, 21)?.map((item) => (
               <div
-                key={item.id}
+                key={item?.id}
                 className="relative transition-all duration-500 ease-in-out transform hover:scale-110"
               >
-                <Link to={item.to} className="">
+                <Link to={item?.to} className="">
                   <img
                     src={item.img}
                     alt=""
                     data-aos="zoom-in"
-                    className="w-[300px] h-[300px] min-h-[300px] lg:w-[250px] lg:h-[250px] lg:min-h-[250px] mb-8"
-                    onMouseOver={() => setArtId(item.id)}
+                    className="w-[300px] h-[300px] min-h-[300px] lg:w-[250px] lg:h-[250px] lg:min-h-[250px] mb-8 lazyload"
+                    onMouseOver={() => setArtId(item?.id)}
                   />
                   {/* After Hover Part */}
                   <AnimatePresence initial={false}>
                     <div
                       className={cx(
                         "hidden absolute top-0 bg-brown-main bg-opacity-50 text-center w-[300px] h-[300px] min-h-[300px] lg:w-[250px] lg:h-[250px] lg:min-h-[250px]",
-                        { "!flex !justify-center": artId === item.id }
+                        { "!flex !justify-center": artId === item?.id }
                       )}
                     >
                       <div className="text-white-main border-2 border-white-main rounded-3xl px-3 py-1 self-center font-primary">
@@ -229,23 +229,23 @@ const Home = () => {
           <div className="flex justify-center sm:block">
             {artData?.slice(21, 22)?.map((item) => (
               <div
-                key={item.id}
+                key={item?.id}
                 className="relative transition-all duration-500 ease-in-out transform hover:scale-110"
               >
-                <Link to={item.to} className="">
+                <Link to={item?.to} className="">
                   <img
-                    src={item.img}
+                    src={item?.img}
                     alt=""
                     data-aos="zoom-in"
-                    className="w-[300px] h-[300px] min-h-[300px] lg:w-[500px] lg:h-[500px] mb-8 lg:my-8"
-                    onMouseOver={() => setArtId(item.id)}
+                    className="w-[300px] h-[300px] min-h-[300px] lg:w-[500px] lg:h-[500px] mb-8 lg:my-8 lazyload"
+                    onMouseOver={() => setArtId(item?.id)}
                   />
                   {/* After Hover Part */}
                   <AnimatePresence initial={false}>
                     <div
                       className={cx(
                         "hidden absolute top-0 bg-brown-main bg-opacity-50 text-center w-[300px] h-[300px] min-h-[300px] lg:w-[500px] lg:h-[500px]",
-                        { "!flex !justify-center": artId === item.id }
+                        { "!flex !justify-center": artId === item?.id }
                       )}
                     >
                       <div className="text-white-main border-2 border-white-main rounded-3xl px-3 py-1 self-center font-primary">
@@ -273,23 +273,23 @@ const Home = () => {
             <div className="flex justify-center sm:block">
               {artData?.slice(22, 23)?.map((item) => (
                 <div
-                  key={item.id}
+                  key={item?.id}
                   className="relative transition-all duration-500 ease-in-out transform hover:scale-110"
                 >
-                  <Link to={item.to} className="">
+                  <Link to={item?.to} className="">
                     <img
-                      src={item.img}
+                      src={item?.img}
                       alt=""
                       data-aos="zoom-in"
-                      className="w-[300px] h-[300px] min-h-[300px] lg:w-[500px] lg:h-[500px] mb-8 lg:my-12"
-                      onMouseOver={() => setArtId(item.id)}
+                      className="w-[300px] h-[300px] min-h-[300px] lg:w-[500px] lg:h-[500px] mb-8 lg:my-12 lazyload"
+                      onMouseOver={() => setArtId(item?.id)}
                     />
                     {/* After Hover Part */}
                     <AnimatePresence initial={false}>
                       <div
                         className={cx(
                           "hidden absolute top-0 bg-brown-main bg-opacity-50 text-center w-[300px] h-[300px] min-h-[300px] lg:w-[500px] lg:h-[500px]",
-                          { "!flex !justify-center": artId === item.id }
+                          { "!flex !justify-center": artId === item?.id }
                         )}
                       >
                         <div className="text-white-main border-2 border-white-main rounded-3xl px-3 py-1 self-center font-primary">

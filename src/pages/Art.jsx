@@ -20,7 +20,7 @@ const Art = () => {
         <img
           src={artItem.img}
           alt=""
-          className="w-[300px] h-[300px] lg:w-[475px] lg:h-[475px]"
+          className="w-[300px] h-[300px] lg:w-[475px] lg:h-[475px] lazyload"
         />
       </div>
       <div className="text-center py-8 lg:text-left">
