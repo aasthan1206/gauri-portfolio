@@ -17,7 +17,6 @@ const Home = () => {
 
   const form = useRef();
   const [artId, setArtId] = useState(0);
-  // console.log(process.env.REACT_APP_SERVICE_ID);
 
   const sendEmail = (e) => {
     e.preventDefault();
